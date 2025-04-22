@@ -17,17 +17,17 @@ Colony-Forming Units (CFUs) are a measure of viable fungal or bacterial cells in
 The table below presents key summary statistics for each combination of treatment and position:
 
 ```
-| Treatment             | Position   |   count |   mean |   std |   min |   max |   sem |    cv |   efficacy |
-|:----------------------|:-----------|--------:|-------:|------:|------:|------:|------:|------:|-----------:|
-| Botector              | Bottom     |      15 | 100.07 | 18.44 |    68 |   134 |  4.76 | 18.42 |      41.04 |
-| Botector              | Middle     |      15 | 131.07 | 40.63 |    86 |   197 | 10.49 | 31.00 |      45.57 |
-| Botector              | Top        |      15 | 128.20 | 48.93 |    60 |   222 | 12.63 | 38.16 |      42.22 |
-| Control               | Bottom     |      15 | 169.73 | 45.51 |    85 |   256 | 11.75 | 26.81 |     nan    |
-| Control               | Middle     |      15 | 240.80 | 66.06 |   158 |   433 | 17.06 | 27.43 |     nan    |
-| Control               | Top        |      15 | 221.87 | 65.12 |   156 |   345 | 16.81 | 29.35 |     nan    |
-| Potassium Bicarbonate | Bottom     |      15 | 120.27 | 20.88 |    87 |   167 |  5.39 | 17.36 |      29.14 |
-| Potassium Bicarbonate | Middle     |      15 |  74.47 | 42.66 |    21 |   146 | 11.01 | 57.29 |      69.08 |
-| Potassium Bicarbonate | Top        |      15 |  40.73 | 12.74 |    16 |    65 |  3.29 | 31.27 |      81.64 |
+| Treatment             | Position   |   count |     mean |     std |   min |   max |     sem |      cv |   efficacy |
+|:----------------------|:-----------|--------:|---------:|--------:|------:|------:|--------:|--------:|-----------:|
+| Botector              | Bottom     |      15 | 100.0667 | 18.4370 |    68 |   134 |  4.7604 | 18.4247 |    41.0448 |
+| Botector              | Middle     |      15 | 131.0667 | 40.6316 |    86 |   197 | 10.4910 | 31.0007 |    45.5703 |
+| Botector              | Top        |      15 | 128.2000 | 48.9259 |    60 |   222 | 12.6326 | 38.1637 |    42.2175 |
+| Control               | Bottom     |      15 | 169.7333 | 45.5121 |    85 |   256 | 11.7512 | 26.8139 |   nan      |
+| Control               | Middle     |      15 | 240.8000 | 66.0619 |   158 |   433 | 17.0571 | 27.4343 |   nan      |
+| Control               | Top        |      15 | 221.8667 | 65.1228 |   156 |   345 | 16.8146 | 29.3522 |   nan      |
+| Potassium Bicarbonate | Bottom     |      15 | 120.2667 | 20.8788 |    87 |   167 |  5.3909 | 17.3604 |    29.1438 |
+| Potassium Bicarbonate | Middle     |      15 |  74.4667 | 42.6596 |    21 |   146 | 11.0147 | 57.2868 |    69.0753 |
+| Potassium Bicarbonate | Top        |      15 |  40.7333 | 12.7362 |    16 |    65 |  3.2885 | 31.2671 |    81.6406 |
 ```
 
 *Note: 'count' represents number of measurements, 'mean' and 'std' are average and standard deviation of CFU counts, 'sem' is standard error of mean, 'cv' is coefficient of variation (%), and 'efficacy' shows percent reduction compared to control.*
@@ -237,4 +237,4 @@ Each visualization presents a different perspective on the data to help understa
 
 The analysis reveals a significant effect of treatment on CFU counts. The Botector and Control treatments differ significantly (p = 0.0000). The Botector and Potassium Bicarbonate treatments differ significantly (p = 0.0005). The Control and Potassium Bicarbonate treatments differ significantly (p = 0.0000). The position on the slope did not significantly affect CFU counts. The significant interaction between treatment and position indicates that the effect of treatments varies depending on the position on the slope.
 
-Overall, Botector reduced CFU counts by 43.2% and Potassium Bicarbonate by 62.8% compared to the Control treatment.
+Overall, Botector reduced CFU counts by 43.1794% and Potassium Bicarbonate by 62.7662% compared to the Control treatment.

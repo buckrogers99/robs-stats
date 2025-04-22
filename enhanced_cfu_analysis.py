@@ -155,7 +155,7 @@ plt.close()
 # 3. Heat map of CFU counts
 plt.figure(figsize=(12, 8))
 heatmap_data = tidy_df.groupby(['Position', 'Treatment'])['CFU'].mean().unstack()
-sns.heatmap(heatmap_data, annot=True, fmt=".1f", cmap="YlOrRd", linewidths=.5)
+sns.heatmap(heatmap_data, annot=True, fmt=".4f", cmap="YlOrRd", linewidths=.5)
 plt.title('Mean CFU Counts Heatmap', fontsize=16, fontweight='bold')
 plt.tight_layout()
 plt.savefig('cfu_heatmap.png', dpi=300)
@@ -186,7 +186,7 @@ ax.yaxis.set_major_formatter(mtick.PercentFormatter())
 
 # Add value labels on the bars
 for container in bars.containers:
-    bars.bar_label(container, fmt='%.1f%%')
+    bars.bar_label(container, fmt='%.4f%%')
 
 plt.title('Treatment Efficacy Compared to Control', fontsize=16, fontweight='bold')
 plt.ylabel('Reduction in CFU (%)', fontsize=14)
@@ -234,7 +234,7 @@ Colony-Forming Units (CFUs) are a measure of viable fungal or bacterial cells in
 The table below presents key summary statistics for each combination of treatment and position:
 
 ```
-{summary_stats.to_markdown(index=False, floatfmt=".2f")}
+{summary_stats.to_markdown(index=False, floatfmt=".4f")}
 ```
 
 *Note: 'count' represents number of measurements, 'mean' and 'std' are average and standard deviation of CFU counts, 'sem' is standard error of mean, 'cv' is coefficient of variation (%), and 'efficacy' shows percent reduction compared to control.*
@@ -445,7 +445,7 @@ control_efficacy = summary_stats[summary_stats['Treatment'] == 'Control']['mean'
 bot_percent = ((control_efficacy - botector_efficacy) / control_efficacy) * 100
 pb_percent = ((control_efficacy - pb_efficacy) / control_efficacy) * 100
 
-markdown += f"\n\nOverall, Botector reduced CFU counts by {bot_percent:.1f}% and Potassium Bicarbonate by {pb_percent:.1f}% compared to the Control treatment."
+markdown += f"\n\nOverall, Botector reduced CFU counts by {bot_percent:.4f}% and Potassium Bicarbonate by {pb_percent:.4f}% compared to the Control treatment."
 
 # Save markdown to a file
 with open('cfu_analysis_report.md', 'w') as f:
